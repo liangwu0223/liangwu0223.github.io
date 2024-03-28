@@ -1,0 +1,35 @@
+h1:hover {
+color:blueviolet;
+}
+
+#second {
+    color:aqua;
+}
+
+.second{
+    color:black;
+}
+
+#welcome {
+    font-style: oblique;
+}
+
+charm {
+    color:blue;
+}
+
+p {
+    font-weight: bold;
+}
+
+p#welcome::first-letter{
+    font-size: large;
+    color:cadetblue
+}
+
+body{
+    background-color: black;
+    color: green;
+    font-family:'Courier New', Courier, monospace;
+    padding: 5cm;
+}
