@@ -1,21 +1,13 @@
 h1:hover {
-color:blueviolet;
+    color:blueviolet;
 }
 
-#second {
-    color:aqua;
-}
-
-.second{
-    color:black;
+h3{
+    color: white;
 }
 
 #welcome {
     font-style: oblique;
-}
-
-charm {
-    color:blue;
 }
 
 p {
@@ -24,12 +16,13 @@ p {
 
 p#welcome::first-letter{
     font-size: large;
-    color:cadetblue
+    color:lightyellow;
 }
 
 body{
     background-color: black;
-    color: green;
+    color: lightgreen;
     font-family:'Courier New', Courier, monospace;
     padding: 5cm;
+    margin: 0cm;
 }
