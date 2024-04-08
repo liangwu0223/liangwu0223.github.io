@@ -1,0 +1,23 @@
+$uchicago-maroon: #800000;
+$uchicago-light-gray: #D6D6CE;
+$uchicago-dark-gray: #767676;
+$white: #ffffff;
+$black: #000000;
+$font-stack: Helvetica, sans-serif;
+$std-margin-left: 15px;
+
+
+h1 {
+    background-color: $uchicago-light-gray;
+    color: $uchicago-maroon;
+}
+
+nav {
+    background-color: lightgrey;
+}
+
+a {
+    color: $black
+}
+
+
