@@ -1,0 +1,106 @@
+<!-- JS Fun -->
+<!--
+    1. Create two input forms on your page to take user input and launch functions.
+    2. Create an external JavaScript file where you will write two functions.
+    3. Load that JS file on your HTML page.
+    4. FIRST FUNCTION: Write a JavaScript function that asks a trivia question. The function should run from an external JS file. Create a div with the question. The input box accepts the user guess and the button launches the function. Can you also figure out how to launch the function if the user hits enter in the input box instead of clicking the button? The function should allow the user to type an answer into an input box. The function checks to see if the answer is correct, then adds a response to the page to repeat what they guessed and if it is correct.
+    5. SECOND FUNCTION: Write a JS function that asks the user to input a 5-digit number and reports back to the user if the number is odd or even. Your function should also check to make sure the number is, in fact, a 5-digit integer (not a string and no decimals). How did you do it?
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+    <link
+    href="../css/DigChalk_week5.css"
+    rel="stylesheet"
+    />
+    
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <div class="container">
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid ">
+                    <a class="navbar-brand ">Digital Chalkboard Week 5 "More JSFun"</a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <p>1. Create two input forms on your page to take user input and launch functions.</p>
+            
+            <p>2. Create an external JavaScript file where you will write two functions.</p>
+            <p>3. Load that JS file on your HTML page.</p>
+            <p>4. FIRST FUNCTION: Write a JavaScript function that asks a trivia question. The function should run from an external JS file. Create a div with the question. The input box accepts the user guess and the button launches the function. Can you also figure out how to launch the function if the user hits enter in the input box instead of clicking the button? The function should allow the user to type an answer into an input box. The function checks to see if the answer is correct, then adds a response to the page to repeat what they guessed and if it is correct.</p>
+            <p>5. SECOND FUNCTION: Write a JS function that asks the user to input a 5-digit number and reports back to the user if the number is odd or even. Your function should also check to make sure the number is, in fact, a 5-digit integer (not a string and no decimals). How did you do it?</p>
+        </div>
+        <div class="container mt-4">
+            
+            <div class="row">
+                
+                <div class="col">
+                    <h2>Trivia Question</h2>
+                    
+                    <div id="question">What is the capital of France?</div>
+                    
+                    <input type="text" id="TriviaAnswer" class="form-control" placeholder="Type your answer">
+                    
+                    <button id="button1" class="btn btn-outline-info" onclick="checkTriviaAnswer()">check Trivia Answer</button>
+                    
+                    <div id="TriviaResponse"></div>
+                </div>
+                
+                <div class="col">
+                    <h2>Enter a five digits number like 12345.</h2>
+                    
+                    <input type="text" id="numberInput" class="form-control" placeholder="Enter a 5 digits number">
+                    
+                    <button id="button2" class="btn btn-info" onclick="checkNumber()">Submit</button>
+
+                    <div id="output"></div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+        ></script>
+        
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+        ></script>
+        
+        <script src="../js/DigChalk_week5.js"></script>
+    </body>
+    </html>
+    
