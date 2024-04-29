@@ -1,7 +1,7 @@
 // Create Howler object
 
 var sound = new Howl({
-    src: ['https://www.learningcontainer.com/wp-content/uploads/2020/02/Kalimba.mp3'],
+    src: ["../soundfiles/folk.mp3"],
     volume: 0.5,
     loop: true,
     autoplay: false
