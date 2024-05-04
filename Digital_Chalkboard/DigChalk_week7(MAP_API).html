@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>DIGS MAP AP(Leaflet)</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+    
+    <!-- Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    
+    <!--CSS style-->
+    <style>
+        #map { height: 400px; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div id="map"></div>
+        <script>
+            // Initialize the map
+            var map = L.map('map').setView([22.42141019043563, 114.2089170918704], 17);
+            
+            // Add an OpenStreetMap tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Marker
+            var marker = L.marker([22.42141019043563, 114.2089170918704]).addTo(map)
+
+            // Circle
+            var circle = L.circle([22.42141019043563, 114.2089170918704],{
+                color: 'yellow',
+                fillColor: '#40f',
+                fillOpacity: 0.3,
+                radius:100
+            }).addTo(map)
+
+            // Polygon
+            var polygon = L.polygon([
+                [22.42148174783528, 114.20927490712643],
+                [22.42171078035802, 114.2107652379881],
+                [22.42103062206447, 114.21081403975437],
+                [22.42086058197054, 114.20978920266309],
+            ]).addTo(map)
+
+            // Add Pop up
+            marker.bindPopup("<p><strong>The Chinese University of Hong Kong</strong><p><p>Where I study a Bachelor for Architecture</p>").openPopup();
+            polygon.bindPopup("our dormitory");
+        </script>
+        
+        
+        
+        
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+    ></script>
+    
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+    ></script>
+</body>
+</html>
