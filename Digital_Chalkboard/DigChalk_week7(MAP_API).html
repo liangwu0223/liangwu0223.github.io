@@ -31,11 +31,16 @@
     <style>
         #map { height: 400px; }
     </style>
+    
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
 </head>
 
 <body>
     <header>
         <!-- place navbar here -->
+        <div id="nav-placeholder"></div>
         <div>
             <h3>Digital Studies Digital Chalkboard Week 7 MAP_API</h3>
         </div>
@@ -51,10 +56,10 @@
                 maxZoom: 19,
                 attribution: '© OpenStreetMap contributors'
             }).addTo(map);
-
+            
             // Marker
             var marker = L.marker([22.42141019043563, 114.2089170918704]).addTo(map)
-
+            
             // Circle
             var circle = L.circle([22.42141019043563, 114.2089170918704],{
                 color: 'yellow',
@@ -62,15 +67,15 @@
                 fillOpacity: 0.3,
                 radius:100
             }).addTo(map)
-
+            
             // Polygon
             var polygon = L.polygon([
-                [22.42148174783528, 114.20927490712643],
-                [22.42171078035802, 114.2107652379881],
-                [22.42103062206447, 114.21081403975437],
-                [22.42086058197054, 114.20978920266309],
+            [22.42148174783528, 114.20927490712643],
+            [22.42171078035802, 114.2107652379881],
+            [22.42103062206447, 114.21081403975437],
+            [22.42086058197054, 114.20978920266309],
             ]).addTo(map)
-
+            
             // Add Pop up
             marker.bindPopup("<p><strong>The Chinese University of Hong Kong</strong><p><p>Where I study a Bachelor for Architecture</p>").openPopup();
             polygon.bindPopup("our dormitory");
@@ -82,6 +87,8 @@
     </main>
     <footer>
         <!-- place footer here -->
+        <!--footer is loaded here via jQuery-->
+        <div id="footer-placeholder" class="fixed-bottom"></div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -95,5 +102,7 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"
     ></script>
+    <script src="/liangwu0223.github.io/js/navbar.js"></script>
+    <script src="/liangwu0223.github.io/js/footer.js"></script>
 </body>
 </html>

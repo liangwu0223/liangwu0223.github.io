@@ -1,0 +1,1 @@
+$(function () {$("#footer-placeholder").load("/liangwu0223.github.io/footer.html");});
