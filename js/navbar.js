@@ -1,1 +1,1 @@
-$(function () {$("#nav-placeholder").load("/liangwu0223.github.io/navbar.html");});
+$(function () {$("#nav-placeholder").load("navbar.html");});
