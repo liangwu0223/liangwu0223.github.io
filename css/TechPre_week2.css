@@ -8,10 +8,11 @@ h3{
 
 #welcome {
     font-style: oblique;
+    font-weight: bold;
 }
 
-p {
-    font-weight: bold;
+td:hover {
+    font-size: large;
 }
 
 p#welcome::first-letter{
