@@ -1,1 +1,1 @@
-$(function () {$("#nav-placeholder").load("../navbarText.html");});
+$(function () {$("#nav-placeholder").load("../navbarTEST.html");});
