@@ -26,10 +26,37 @@
         <!-- place navbar here -->
         <div id="nav-placeholder"></div>
         <!-- navbar end -->
-
+        
     </header>
     <main>
         <div class="container mt-4">
+            <h4 class="text-center">
+                Week 06 Group 3 — Digital Chalkboard: More JS Fun
+            </h4>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <h6>Write a JS function called lastItem() that takes one parameter.</h6>
+                    <ul>
+                        <li>The parameter will be an array that you can hard code into an onclick event on the button.</li>
+                        <li>onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi'])"</li>
+                        <li>Prepare a div on your page to display some output.</li>
+                        <li>The function should output the original array on the page: ['Watermelon', 'Apple', 'Orange', 'Kiwi'].</li>
+                        <li>The function should output the item that is last alphabetically: Watermelon.</li>
+                        <li>Test your function by adding new values to the array to make sure it returns the correct item.</li>
+                    </ul>
+                </div>
+                <div class="col text-center">
+                    <h6>Write a JS function that asks the user to input things, then sorts them alphabetically and displays them on the HTML page.</h6>
+                    <ul>
+                        <li>First, ask the user how many things the would like to enter, between 2 and 4.</li>
+                        <li>Use prompt() to gather the user input.</li>
+                        <li>Watch this video for all the details.</li>
+                        <li>Notice how the prompt reports back to the user how many items they chose to submit, then also what categories they chose.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
             <div class="row">
                 <div class="col text-center">
                     <button id="inputButton" class="btn btn-primary" onclick="getAndSort()">Input Items</button>
@@ -47,8 +74,8 @@
     </main>
     <footer>
         <!-- place footer here -->
-            <!--footer is loaded here via jQuery-->
-    <div id="footer-placeholder" class="fixed-bottom"></div>
+        <!--footer is loaded here via jQuery-->
+        <div id="footer-placeholder" class="fixed-bottom"></div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script

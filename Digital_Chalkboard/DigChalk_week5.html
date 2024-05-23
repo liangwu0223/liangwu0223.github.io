@@ -32,7 +32,11 @@
     
     <!--JQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    
+    <style>
+        .container{
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,7 +46,10 @@
         <!-- navbar end -->
     </header>
     <main>
-        <div class="container">
+        <div class="container mt-4">
+            <h4>Week 05 Group 2 — Digital Chalkboard: JS Fun</h4>
+        </div>
+        <div class="container mt-4">
             <p>1. Create two input forms on your page to take user input and launch functions.</p>
             
             <p>2. Create an external JavaScript file where you will write two functions.</p>
@@ -61,7 +68,7 @@
                     
                     <input type="text" id="TriviaAnswer" class="form-control" placeholder="Type your answer">
                     
-                    <button id="button1" class="btn btn-outline-info" onclick="checkTriviaAnswer()">check Trivia Answer</button>
+                    <button id="button1" class="btn btn-outline-info mt-4" onclick="checkTriviaAnswer()">check Trivia Answer</button>
                     
                     <div id="TriviaResponse"></div>
                 </div>
@@ -71,7 +78,7 @@
                     
                     <input type="text" id="numberInput" class="form-control" placeholder="Enter a 5 digits number">
                     
-                    <button id="button2" class="btn btn-info" onclick="checkNumber()">Submit</button>
+                    <button id="button2" class="btn btn-info mt-4" onclick="checkNumber()">Submit</button>
                     
                     <div id="output"></div>
                 </div>
