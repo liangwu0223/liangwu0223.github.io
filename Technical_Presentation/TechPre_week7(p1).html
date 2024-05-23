@@ -19,35 +19,55 @@
     <div id="nav-placeholder"></div>
     <!-- navbar end -->
     
-    <h1>OCHRE API Example 1</h1>
+    <div class="container mt-4">
+        <h4>Week 07 Group 6 — Technical Presentation: Deeper XML</h4>
+        <p><strong>Details</strong></p>
+        <p>Bring together what you've learned about Bootstrap, JS, and Sass to access and display data from the OCHRE database. Below are two IDs for data from OCHRE. Create one page for each link. The challenge is to write a single JavaScript file that can be implemented on both pages.
+            
+            <p>The Base URL to call the API is https://ochre.lib.uchicago.edu/ochre?uuid=. Add a UUID to the end of the base URL to call the API. You can use fetch or XHR to make the API call. Convert the XML into a usable object. Use JS to extract the information from the XML to display as HTML.</p>
+            
+            <p>Here is the OCHRE API documentation that includes some information like how to display an image.</p>
+
+            <p><strong>First item:
+</strong></p>
+<p>
+    UUID — 6f18e3a7-a396-46d9-85cb-92674c24cfc0
     
-    <!-- Output from JS function loads here -->
-    <div class="container mt-3" id="ochreContainer" data-uuid = '6f18e3a7-a396-46d9-85cb-92674c24cfc0'>
-        <h1 id="title"></h1>
-        <table class="table table-striped order-table" id="ochreTable">
-            <thead class="thread-dark" id="ochreTableColumns">
-                <tr>
-                    <th style="text-align: left; width: 30%;">Property</th>
-                    <th style="text-align: left; width: 30%;">Value</th>                
-                </tr>
-            </thead>
-            <tbody id="ochreTableBody">
-            </tbody>
-        </table>
-    </div>
+</p><p>At the very least, put the title and properties of the item on the page.</p>
+        </div>
+        <div>
+            <h1 class="text-center">OCHRE API Example 1</h1>
+        </div>
+        
+        
+        <!-- Output from JS function loads here -->
+        <div class="container mt-3" id="ochreContainer" data-uuid = '6f18e3a7-a396-46d9-85cb-92674c24cfc0'>
+            <h1 id="title"></h1>
+            <table class="table table-striped order-table" id="ochreTable">
+                <thead class="thread-dark" id="ochreTableColumns">
+                    <tr>
+                        <th style="text-align: left; width: 30%;">Property</th>
+                        <th style="text-align: left; width: 30%;">Value</th>                
+                    </tr>
+                </thead>
+                <tbody id="ochreTableBody">
+                </tbody>
+            </table>
+        </div>
+        
+        <div class ="footer">
+            <footer>
+                <p>DIGS 30005: Data Publication for the Humanities</p>
+            </footer>
+        </div>
+        <!--footer is loaded here via jQuery-->
+        <div id="footer-placeholder"></div>
+        
+        <!--Load the nav and other referenced JS files-->
+        <script src="../js/TechPre_week7.js"></script>
+        
+        <script src="../js/navbar.js"></script>
+        <script src="../js/footer.js"></script>
+    </body>
+    </html>
     
-    <div class ="footer">
-        <footer>
-            <p>DIGS 30005: Data Publication for the Humanities</p>
-        </footer>
-    </div>
-    <!--footer is loaded here via jQuery-->
-    <div id="footer-placeholder"></div>
-    
-    <!--Load the nav and other referenced JS files-->
-    <script src="../js/TechPre_week7.js"></script>
-    
-    <script src="../js/navbar.js"></script>
-    <script src="../js/footer.js"></script>
-</body>
-</html>
